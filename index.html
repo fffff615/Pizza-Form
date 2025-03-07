@@ -16,189 +16,138 @@
   <hr>
   
   <h3>Important Info!</h3>
-  <label for="fullName">Full Name:</label>
-  <input type="text" name="fullName" placeholder="James Oliver Scott" id="fullName">
-  <br><br>
+  <form id="orderForm" action="done.html" method="get">
+    <label for="fullName">Full Name:</label>
+    <input type="text" name="fullName" placeholder="James Oliver Scott" id="fullName" required>
+    <br><br>
 
-  <label for="email">Email Address:</label>
-  <input type="text" name="email" placeholder="example@domain.com" id="email">
-  <br><br>
+    <label for="email">Email Address:</label>
+    <input type="text" name="email" placeholder="example@domain.com" id="email" required>
+    <br><br>
 
-  <label for="phone">Phone Number:</label>
-  <input type="text" name="phone" placeholder="(XXX) 123-4567" id="phone">
-  <br><br>
+    <label for="phone">Phone Number:</label>
+    <input type="text" name="phone" placeholder="(XXX) 123-4567" id="phone" required>
+    <br><br>
 
-  <label for="location">Delivery Address:</label>
-  <input type="text" name="location" placeholder="1600 Pennsylvania Avenue NW, Washington, D.C. 20500, USA" id="location">
-  <br><br>
+    <label for="location">Delivery Address:</label>
+    <input type="text" name="location" placeholder="1600 Pennsylvania Avenue NW, Washington, D.C. 20500, USA" id="location" required>
+    <br><br>
 
-  <label for="halal">Halal?</label>
-  <input type="radio" id="halalYes" name="halal">
-  <label for="halalYes">Yes</label>
-  <input type="radio" id="halalNo" name="halal">
-  <label for="halalNo">No</label>
-  <br><br>
+    <label for="halal">Halal?</label>
+    <input type="radio" id="halalYes" name="halal" required>
+    <label for="halalYes">Yes</label>
+    <input type="radio" id="halalNo" name="halal" required>
+    <label for="halalNo">No</label>
+    <br><br>
 
-  <label for="vegan">Vegan?</label>
-  <input type="radio" id="veganYes" name="vegan" value="yes">
-  <label for="veganYes">Yes</label>
-  <input type="radio" id="veganNo" name="vegan" value="no">
-  <label for="veganNo">No</label>
-  <br><br>
+    <label for="vegan">Vegan?</label>
+    <input type="radio" id="veganYes" name="vegan" value="yes" required>
+    <label for="veganYes">Yes</label>
+    <input type="radio" id="veganNo" name="vegan" value="no" required>
+    <label for="veganNo">No</label>
+    <br><br>
 
-  <label for="vegetarian">Vegetarian?</label>
-  <input type="radio" id="vegetarianYes" name="vegetarian" value="yes">
-  <label for="vegetarianYes">Yes</label>
-  <input type="radio" id="vegetarianNo" name="vegetarian" value="no">
-  <label for="vegetarianNo">No</label>
-  <br><br>
+    <label for="vegetarian">Vegetarian?</label>
+    <input type="radio" id="vegetarianYes" name="vegetarian" value="yes" required>
+    <label for="vegetarianYes">Yes</label>
+    <input type="radio" id="vegetarianNo" name="vegetarian" value="no" required>
+    <label for="vegetarianNo">No</label>
+    <br><br>
 
-  <hr>
-  <h3>Customize your Pizza!</h3>
+    <hr>
+    <h3>Customize your Pizza!</h3>
 
-  <label for="crustType">Crust Type:</label>
-  <select id="crustType">
-      <option value="normal">Normal</option>
-      <option value="thick">Thick</option>
-      <option value="stuffed">Stuffed Crust</option>
-      <option value="deepdish">Chicago Deep Dish</option>
-      <option value="sicilian">Sicilian</option>
-      <option value="ny">New York</option>
-      <option value="detroit">Detroit</option>
-      <option value="stlouis">St. Louis</option>
-      <option value="roman">Roman</option>
-      <option value="greek">Greek</option>
-      <option value="flatbread">Flatbread</option>
-      <option value="brazilian">Brazilian Thin</option>
-  </select>
-  <br><br>
+    <label for="crustType">Crust Type:</label>
+    <select id="crustType" required>
+        <option value="normal">Normal</option>
+        <option value="thick">Thick</option>
+        <option value="stuffed">Stuffed Crust</option>
+        <option value="deepdish">Chicago Deep Dish</option>
+        <option value="sicilian">Sicilian</option>
+        <option value="ny">New York</option>
+        <option value="detroit">Detroit</option>
+        <option value="stlouis">St. Louis</option>
+        <option value="roman">Roman</option>
+        <option value="greek">Greek</option>
+        <option value="flatbread">Flatbread</option>
+        <option value="brazilian">Brazilian Thin</option>
+    </select>
+    <br><br>
 
-  <label for="sauce">Sauce Type:</label>
-  <select id="sauce">
-      <option value="tomato">Tomato</option>
-      <option value="bbq">BBQ</option>
-      <option value="marinara">Marinara</option>
-      <option value="arrabbiata">Arrabbiata</option>
-      <option value="garlic">Garlic</option>
-      <option value="ranch">Ranch</option>
-  </select>
-  <br><br>
-  <label for="stuffings">Stuffed Crust?</label>
-  <input type="radio" id="stuffingsYes" name="stuffings" value="yes">
-  <label for="stuffingsYes">Yes</label>
-  <input type="radio" id="stuffingsNo" name="stuffings" value="no">
-  <label for="stuffingsNo">No</label>
-  <br><br>
-  <label for="toppings">Toppings:</label>
-  <br><br>
-  <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni  
-  <input type="checkbox" name="toppings" value="Beef">Beef  
+    <label for="sauce">Sauce Type:</label>
+    <select id="sauce" required>
+        <option value="tomato">Tomato</option>
+        <option value="bbq">BBQ</option>
+        <option value="marinara">Marinara</option>
+        <option value="arrabbiata">Arrabbiata</option>
+        <option value="garlic">Garlic</option>
+        <option value="ranch">Ranch</option>
+    </select>
+    <br><br>
 
-  <input type="checkbox" name="toppings" value="Tandoori Chicken">Tandoori Chicken  
-  <br>
-  <input type="checkbox" name="toppings" value="Mushrooms">Mushrooms   
+    <label for="toppings">Toppings (Select at least one):</label>
+    <br><br>
+    <fieldset required>
+      <legend>Choose your toppings:</legend>
+      <input type="checkbox" name="toppings" value="Pepperoni" required> Pepperoni  
+      <input type="checkbox" name="toppings" value="Beef"> Beef  
+      <input type="checkbox" name="toppings" value="Tandoori Chicken"> Tandoori Chicken  
+      <br>
+      <input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms  
+      <input type="checkbox" name="toppings" value="Onions"> Onions   
+      <input type="checkbox" name="toppings" value="Olives"> Olives  
+      <br>
+      <input type="checkbox" name="toppings" value="Peppers"> Peppers  
+      <input type="checkbox" name="toppings" value="Sweetcorn"> Sweetcorn  
+    </fieldset>
+    <br><br>
 
-  <input type="checkbox" name="toppings" value="Onions">Onions   
-  <input type="checkbox" name="toppings" value="Olives">Olives   
-  <br>
+    <label for="otherToppings">Anything Else? (optional):</label>
+    <br><br>
+    <textarea rows="5" cols="40" name="comment" placeholder="Pineapple, Sausage and Salmon"></textarea>
+    <br><br>
 
-  <input type="checkbox" name="toppings" value="Peppers">Peppers  
-  <input type="checkbox" name="toppings" value="Sweetcorn">Beef  
-  <br>
-  <br>
-<label for="otherToppings">Anything Else?</label>
-<br><br>
-  <textarea rows="5" cols="40" name="comment" placeholder="Pinnapple, Sausage and Salmon"></textarea>
-  <br><br>
-  <label for="Cheese">Cheese!</label>
- 
-  <br><br>
-  <span class="label">None</span>
-  <input type="range" name="Cheese" min="0" max="50" step="0.1">
-  <span class="label">Lots</span>
-  <br>
-  <br>
-<label for="sizeCrust">Crust Size</label>
-<br>
-<br>
-  <span class="label">5cm</span>
-  <input type="range" name="crust" min="5" max="25" step="0.1">
-  <span class="label">25cm</span>
-  <br><br>
+    <label for="Cheese">Cheese!</label>
+    <br><br>
+    <span class="label">None</span>
+    <input type="range" name="Cheese" min="0" max="50" step="0.1" required>
+    <span class="label">Lots</span>
+    <br><br>
 
-  <hr>
-  <h3>Sides!</h3>
-  <br>
-  <label for="drink">Drink:</label>
-  <select id="drink">
-    <option value="tomato">None</option>
-      <option value="tomato">Pepsi Original</option>
-      <option value="bbq">Pepsi Wild Cherry
-      </option>
-      <option value="marinara">Pepsi Diet</option>
-      <option value="arrabbiata">Pepsi Vanilla</option>
+    <label for="sizeCrust">Crust Size</label>
+    <br><br>
+    <span class="label">5cm</span>
+    <input type="range" name="crust" min="5" max="25" step="0.1" required>
+    <span class="label">25cm</span>
+    <br><br>
 
-      <option value="garlic">Sprite Original (Lemon-Lime)</option>
-      <option value="ranch">Sprite Zero Sugar</option>
-      <option value="garlic">Sprite Cranberry</option>
-      <option value="ranch">Sprite Tropical</option>
-      <option value="fantaOrange">Fanta Orange</option>
-      <option value="drPepper">Dr Pepper</option>
-      <option value="drPepperCherry">Dr Pepper Cherry</option>
-      <option value="drPepperCreamSoda">Dr Pepper & Cream Soda</option>
-      <option value="mountainDew">Mountain Dew</option>
-      <option value="mountainDewCodeRed">Mountain Dew Code Red</option>
-      <option value="mountainDewVoltage">Mountain Dew Voltage</option>
-      <option value="7up">7UP</option>
-      <option value="7upCherry">7UP Cherry</option>
-      <option value="7upDiet">Diet 7UP</option>
-      <option value="fantaGrape">Fanta Grape</option>
-      <option value="fantaPineapple">Fanta Pineapple</option>
-      <option value="fantaStrawberry">Fanta Strawberry</option>
-      <option value="fantaPeach">Fanta Peach</option>
-      <option value="fantaBerry">Fanta Berry</option>
-  </select>
-  <br><br>
-  <br><br>
-  <label for="garlic">Chips?</label>
-  <input type="radio" id="garlic" name="garlic" value="yes">
-  <label for="garlic">Yes</label>
-  <input type="radio" id="garlicNo" name="garlic" value="no">
-  <label for="garlicNo">No</label>
-  <br><br>
-  <label for="chips">Cheese Stuffed Crust?</label>
-  <input type="radio" id="chips" name="chips" value="yes">
-  <label for="chips">Yes</label>
-  <input type="radio" id="chipsNo" name="chips" value="no">
-  <label for="stuffingsNo">No</label>
-  <br><br>
- 
+    <hr>
+    <h3>Sides!</h3>
+    <br>
+    <label for="drink">Drink:</label>
+    <select id="drink" required>
+        <option value="tomato">None</option>
+        <option value="tomato">Pepsi Original</option>
+        <option value="bbq">Pepsi Wild Cherry</option>
+        <option value="marinara">Pepsi Diet</option>
+        <option value="arrabbiata">Pepsi Vanilla</option>
+        <option value="garlic">Sprite Original (Lemon-Lime)</option>
+    </select>
+    <br><br>
 
-  <label for="meat">Chicken Lickers!</label>
-  <br><br>
-  <input type="checkbox" name="toppings" value="Peppers">Fried Chicken  
-  <input type="checkbox" name="toppings" value="Peppers">Chicken Nuggets 
+    <label for="chips">Chips?</label>
+    <input type="radio" id="chipsYes" name="chips" value="yes" required>
+    <label for="chipsYes">Yes</label>
+    <input type="radio" id="chipsNo" name="chips" value="no" required>
+    <label for="chipsNo">No</label>
+    <br><br>
+    <button id="button" value="Place Order" formaction="done.html">Submit Order</button>
    
-  <hr>
-  
-  <h3>Payment</h3>
-  <br>
-  <form id="payment-form">
-    <label for="card-number">Card Number:</label><br>
-    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required><br><br>
-
-    <label for="card-holder">Cardholder Name:</label><br>
-    <input type="text" id="card-holder" name="card-holder" placeholder="John Doe" required><br><br>
-
-    <label for="expiry-date">Expiration Date (MM/YY):</label><br>
-    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required><br><br>
-
-    <label for="cvv">CVV:</label><br>
-    <input type="text" id="cvv" name="cvv" placeholder="123" required><br><br>
-
-    
-<br>
-    <button type="submit" id="submit" onclick="location.href='done.html';">Submit Form</button>
   </form>
+  <br>
+ 
 </body>
 </html>
+
+
+  
