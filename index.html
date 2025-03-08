@@ -18,39 +18,50 @@
   <h3>Important Info!</h3>
   <form id="orderForm" action="done.html" method="get">
       <label for="fullName">Full Name:</label>
-      <input type="text" name="fullName" placeholder="James Oliver Scott" id="fullName" required>
+      <input type="text" name="fullName" placeholder="James Oliver Scott" id="fullName" required >
       <br><br>
 
       <label for="email">Email Address:</label>
-      <input type="email" name="email" placeholder="example@domain.com" id="email" required>
+      <input type="email" name="email" placeholder="example@domain.com" id="email" required >
       <br><br>
 
       <label for="phone">Phone Number:</label>
-      <input type="text" name="phone" placeholder="(XXX) 123-4567" id="phone" required>
+      <input type="text" name="phone" placeholder="(XXX) 123-4567" id="phone" required >
       <br><br>
 
-      <label for="location">Delivery Address:</label>
-      <input type="text" name="location" placeholder="1600 Pennsylvania Avenue NW, Washington, D.C. 20500, USA" id="location" required>
+      <label for="Street">Street:</label>
+      <input type="text" name="Street" placeholder="42 Baker Street
+      " id="street"  >
       <br><br>
+      <label for="City">City:</label>
+      <input type="text" name="City" placeholder="London" id="city"  >
+      <br><br>
+      <label for="Zip">Zip Code:</label>
+      <input type="text" name="Zip" placeholder="SW1A 1AA" id="zip"  >
+      <br><br>
+      <label for="Country">Country:</label>
+      <input type="text" name="Country" placeholder="United Kingdom" id="country"  >
+      <br><br>
+      
 
       <label for="halal">Halal?</label>
-      <input type="radio" id="halalYes" name="halal" required>
+      <input type="radio" required ="halalYes" name="halal"  >
       <label for="halalYes">Yes</label>
-      <input type="radio" id="halalNo" name="halal" required>
+      <input type="radio" id="halalNo" name="halal"  >
       <label for="halalNo">No</label>
       <br><br>
 
       <label for="vegan">Vegan?</label>
-      <input type="radio" id="veganYes" name="vegan" value="yes" required>
+      <input type="radio" required="veganYes" name="vegan" value="yes"  >
       <label for="veganYes">Yes</label>
-      <input type="radio" id="veganNo" name="vegan" value="no" required>
+      <input type="radio" id="veganNo" name="vegan" value="no"  >
       <label for="veganNo">No</label>
       <br><br>
 
       <label for="vegetarian">Vegetarian?</label>
-      <input type="radio" id="vegetarianYes" name="vegetarian" value="yes" required>
+      <input type="radio" id="vegetarianYes" name="vegetarian" value="yes" required >
       <label for="vegetarianYes">Yes</label>
-      <input type="radio" id="vegetarianNo" name="vegetarian" value="no" required>
+      <input type="radio" id="vegetarianNo" name="vegetarian" value="no"  >
       <label for="vegetarianNo">No</label>
       <br><br>
 
@@ -58,7 +69,7 @@
       <h3>Customize your Pizza!</h3>
 
       <label for="crustType">Crust Type:</label>
-      <select id="crustType" required>
+      <select id="crustType"  >
           <option value="normal">Normal</option>
           <option value="thick">Thick</option>
           <option value="stuffed">Stuffed Crust</option>
@@ -75,7 +86,7 @@
       <br><br>
 
       <label for="sauce">Sauce Type:</label>
-      <select id="sauce" required>
+      <select id="sauce"  >
           <option value="tomato">Tomato</option>
           <option value="bbq">BBQ</option>
           <option value="marinara">Marinara</option>
@@ -88,40 +99,40 @@
       <label for="stuffings">Stuffed Crust?</label>
       <input type="radio" id="stuffingsYes" name="stuffings" value="yes" required>
       <label for="stuffingsYes">Yes</label>
-      <input type="radio" id="stuffingsNo" name="stuffings" value="no" required>
+      <input type="radio" id="stuffingsNo" name="stuffings" value="no" >
       <label for="stuffingsNo">No</label>
       <br><br>
 
       <label for="toppings">Toppings:</label>
       <br><br>
-      <input type="checkbox" name="toppings" value="Pepperoni" required>Pepperoni  
-      <input type="checkbox" name="toppings" value="Beef" required>Beef  
-      <input type="checkbox" name="toppings" value="Tandoori Chicken" required>Tandoori Chicken  
+      <input type="checkbox" name="toppings" value="Pepperoni" >Pepperoni  
+      <input type="checkbox" name="toppings" value="Beef" >Beef  
+      <input type="checkbox" name="toppings" value="Tandoori Chicken" >Tandoori Chicken  
       <br>
-      <input type="checkbox" name="toppings" value="Mushrooms" required>Mushrooms  
-      <input type="checkbox" name="toppings" value="Onions" required>Onions  
-      <input type="checkbox" name="toppings" value="Olives" required>Olives  
+      <input type="checkbox" name="toppings" value="Mushrooms" >Mushrooms  
+      <input type="checkbox" name="toppings" value="Onions" >Onions  
+      <input type="checkbox" name="toppings" value="Olives" >Olives  
       <br>
-      <input type="checkbox" name="toppings" value="Peppers" required>Peppers  
-      <input type="checkbox" name="toppings" value="Sweetcorn" required>Sweetcorn  
+      <input type="checkbox" name="toppings" value="Peppers" >Peppers  
+      <input type="checkbox" name="toppings" value="Sweetcorn" >Sweetcorn  
       <br><br>
 
       <label for="otherToppings">Anything Else?</label>
       <br><br>
-      <textarea rows="5" cols="40" name="comment" placeholder="Pineapple, Sausage and Salmon" required></textarea>
+      <textarea rows="5" cols="40" name="comment" placeholder="Pineapple, Sausage and Salmon"  ></textarea>
       <br><br>
 
       <label for="Cheese">Cheese!</label>
       <br><br>
       <span class="label">None</span>
-      <input type="range" name="Cheese" min="0" max="50" step="0.1" required>
+      <input type="range" name="Cheese" min="0" max="50" step="0.1"  >
       <span class="label">Lots</span>
       <br><br>
 
       <label for="sizeCrust">Crust Size</label>
       <br><br>
       <span class="label">5cm</span>
-      <input type="range" name="crust" min="5" max="25" step="0.1" required>
+      <input type="range" name="crust" min="5" max="25" step="0.1"  >
       <span class="label">25cm</span>
       <br><br>
 
@@ -129,7 +140,7 @@
       <h3>Sides!</h3>
       <br>
       <label for="drink">Drink:</label>
-      <select id="drink" required>
+      <select id="drink"  >
           <option value="none">None</option>
           <option value="pepsi">Pepsi Original</option>
           <option value="pepsiWild">Pepsi Wild Cherry</option>
@@ -141,44 +152,53 @@
       </select>
       <br><br>
 
-      <label for="garlic">Chips?</label>
-      <input type="radio" id="garlic" name="garlic" value="yes" required>
+      <label for="Chips">Chips?</label>
+      <input type="radio" id="Chips" name="Chips" value="yes"  required>
+      <label for="Chips">Yes</label>
+      <input type="radio" id="no" name="Chips" value="no"  >
+      <label for="no">No</label>
+      <br><br>
+      <label for="garlic">Garlic bread?</label>
+      <input type="radio" id="garlic" name="garlic" value="yes"  required>
       <label for="garlic">Yes</label>
-      <input type="radio" id="garlicNo" name="garlic" value="no" required>
+      <input type="radio" id="garlicNo" name="garlic" value="no"  >
       <label for="garlicNo">No</label>
       <br><br>
 
       <label for="chips">Cheese Stuffed Crust?</label>
-      <input type="radio" id="chips" name="chips" value="yes" required>
+      <input type="radio" id="chips" name="chips" value="yes" required  >
       <label for="chips">Yes</label>
-      <input type="radio" id="chipsNo" name="chips" value="no" required>
+      <input type="radio" id="chipsNo" name="chips" value="no"  >
       <label for="chipsNo">No</label>
       <br><br>
 
-      <label for="meat">Chicken Lickers!</label>
+      <label for="meat">Other!</label>
       <br><br>
-      <input type="checkbox" name="toppings" value="Fried Chicken" required>Fried Chicken  
-      <input type="checkbox" name="toppings" value="Chicken Nuggets" required>Chicken Nuggets
+      <input type="checkbox" name="toppings" value="Fried Chicken"  >Fried Chicken  
+      <input type="checkbox" name="toppings" value="Chicken Nuggets"  >Chicken Nuggets
+<br>
+      <input type="checkbox" name="toppings" value="Mozzarella Sticks"  >Mozzarella Sticks 
+      <input type="checkbox" name="toppings" value=" Potato Wedges"  > Potato Wedges
       <br><br>
 
       <hr>
       <h3>Payment</h3>
       <br>
       <label for="card-number">Card Number:</label><br>
-      <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required><br><br>
+      <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required ><br><br>
 
       <label for="card-holder">Cardholder Name:</label><br>
-      <input type="text" id="card-holder" name="card-holder" placeholder="John Doe" required><br><br>
+      <input type="text" id="card-holder" name="card-holder" placeholder="John Doe" required ><br><br>
 
       <label for="expiry-date">Expiration Date (MM/YY):</label><br>
-      <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required><br><br>
+      <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY"  required><br><br>
 
       <label for="cvv">CVV:</label><br>
-      <input type="text" id="cvv" name="cvv" placeholder="123" required><br><br>
-
+      <input type="text" id="cvv" name="cvv" placeholder="123"  required><br>
+<h4>We do not collect any data used in this form</h4>
       <button id="button" value="Place Order" formaction="done.html">Submit Order</button>
   </form>
 
-  <script src="script.js"></script>
+
 </body>
 </html>
